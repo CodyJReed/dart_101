@@ -20,4 +20,21 @@ void main() {
   final String fullname = "Wiggler";
 
   const int age = 75;
+
+  // Null safety
+  String? notNull;
+
+  print('Testing "null" comparisons ${notNull == null}');
+
+  String result = notNull!;
+
 }
+
+class Animal {
+   late final String _size;
+
+    void goBig() {
+      _size = 'big';
+      print(_size);
+    }
+  }
